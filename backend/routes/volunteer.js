@@ -11,7 +11,7 @@ const validateVolunteer = [
   body('name').trim().notEmpty().withMessage('Name is required'),
   body('email').isEmail().normalizeEmail().withMessage('Valid email is required'),
   body('phone').trim().notEmpty().withMessage('Phone number is required'),
-  body('message').trim().isLength({ min: 20 }).withMessage('Please tell us more about yourself (min 20 characters)'),
+  body('message').trim().notEmpty().withMessage('Message is required'),
   body('skills').optional().trim(),
   body('area').optional().trim()
 ];

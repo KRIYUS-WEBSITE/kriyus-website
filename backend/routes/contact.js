@@ -11,7 +11,7 @@ const { writeToSheet } = require('../middleware/sheetsHelper');
 const validateContact = [
   body('name').trim().notEmpty().withMessage('Name is required'),
   body('email').isEmail().normalizeEmail().withMessage('Valid email is required'),
-  body('message').trim().isLength({ min: 10 }).withMessage('Message must be at least 10 characters'),
+  body('message').trim().notEmpty().withMessage('Message is required'),
   body('phone').optional().trim()
 ];
 
