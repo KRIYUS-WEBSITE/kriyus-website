@@ -70,7 +70,15 @@ export default function Footer() {
           © {new Date().getFullYear()} KRIYUS – Krida Evam Yuva Samiti. All rights reserved.
           &nbsp;·&nbsp; Pithoragarh, Uttarakhand
         </div>
+        <div style={{ fontSize:11, opacity:.4, marginTop:8 }}>
+  Designed & Developed by{' '}
+  <a href="https://github.com/vidhi-pandey04"
+     style={{ color:'inherit' }} target="_blank">
+    Vidhi Pandey
+  </a>
+</div>
       </div>
+      
     </footer>
   )
 }

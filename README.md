@@ -296,4 +296,10 @@ And in the JSX render:
 
 ---
 
-*Built with 🌿 for KRIYUS – Empowering Rural Communities of the Himalayas since 2002.*
+*Built with ♥ for KRIYUS – Empowering Rural Communities of the Himalayas since 2002.*
+## Credits
+
+**Designed & Developed by**
+[Your Name](https://github.com/your-personal-username)
+
+Built for KRIYUS – Krida Evam Yuva Samiti, Pithoragarh, Uttarakhand.
