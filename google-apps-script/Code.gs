@@ -16,9 +16,7 @@
 
 // ── IMPORTANT: Replace with your Google Sheet ID ───────────
 // The ID is in your Sheet URL:
-// https://docs.google.com/spreadsheets/d/THIS_IS_THE_ID/edit
-// deployment id = AKfycby6yScb63ek46mgd0xEF5qRo9kT2rF5GLEtGgXmSUGjGrtzHSElbxreIK4cAy41GG9t
-// web app url=https://script.google.com/macros/s/AKfycby6yScb63ek46mgd0xEF5qRo9kT2rF5GLEtGgXmSUGjGrtzHSElbxreIK4cAy41GG9t/exec
+// https://docs.google.com/spreadsheets/d/THIS_IS_THE_ID/edit 
 var SPREADSHEET_ID = 'YOUR_GOOGLE_SHEET_ID_HERE';
 
 // ── Sheet Names ─────────────────────────────────────────────
