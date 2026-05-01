@@ -16,12 +16,15 @@ const allItems = [
   { cat:'field',    type:'image', src:'/gallery/pmksy3.jpeg',         label:'SHG Meeting, Pithoragarh' },
   { cat:'field',    type:'image', src:'/gallery/water_conservation1.jpeg',    label:'Biodiversity Documentation' },
   { cat:'field',    type:'image', src:'/gallery/van_panchayat1.jpeg',       label:'Van Panchayat Meeting' },
+  { cat:'field',    type:'image', src:'/gallery/mobile_repair2.jpeg',         label:'Certification' },
 
   // ── TRAINING PROGRAMS ───────────────────────────────────
   { cat:'training', type:'image', src:'/gallery/training1.jpeg',        label:'Mushroom Product Training' },
   { cat:'training', type:'image', src:'/gallery/training2.jpeg',     label:'Food Processing Workshop' },
   { cat:'training', type:'image', src:'/gallery/training3.jpeg',           label:'Mushroom Training' },
   { cat:'training', type:'image', src:'/gallery/training_certification1.jpeg',     label:'Training Completion Certification' },
+  { cat:'training', type:'image', src:'/gallery/mobile_repair1.jpeg', label:'Mobile Repair Training' },
+  { cat:'training', type:'image', src:'/gallery/mobile_repair3.jpeg', label:'Mobile Repair Training' },
 
   // ── AWARENESS CAMPAIGNS ─────────────────────────────────
   { cat:'awareness',type:'image', src:'/gallery/wildlife_conservation2.jpeg',     label:'Climate Awareness Session' },
