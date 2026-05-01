@@ -294,9 +294,9 @@ const projects = [
       { value: 'NBT', label: 'National Partner' },
     ],
     images: [
-      { src: '/gallery/book-fair.jpg', label: 'Book Fair — Children Browsing' },
-      { src: '/gallery/book-fair-2.jpg', label: 'NBT Stall at Fair' },
-      { src: '/gallery/book-fair-3.jpg', label: 'Storytelling Session' },
+      { src: '/gallery/nbt1.jpeg', label: 'Local Govt School' },
+      { src: '/gallery/nbt2.jpeg', label: 'Local School' },
+      { src: '/gallery/nbt3.jpeg', label: 'Storytelling Session' },
     ],
   },
 ]
