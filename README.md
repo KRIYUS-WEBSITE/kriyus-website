@@ -300,6 +300,6 @@ And in the JSX render:
 ## Credits
 
 **Designed & Developed by**
-[Your Name](https://github.com/your-personal-username)
+[Vidhi Pandey](https://github.com/vidhi-pandey04)
 
 Built for KRIYUS – Krida Evam Yuva Samiti, Pithoragarh, Uttarakhand.
