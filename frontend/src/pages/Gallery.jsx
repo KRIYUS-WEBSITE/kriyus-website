@@ -35,6 +35,12 @@ const allItems = [
   { cat:'news',     type:'image', src:'/gallery/new_clipping1.jpeg',         label:'Coverage – Amar Ujala' },
   { cat:'news',     type:'image', src:'/gallery/news_clipping2.jpeg',         label:'Coverage – Dainik Jagran' },
   { cat:'news',     type:'image', src:'/gallery/news_clipping3.jpeg',         label:'Coverage – Local Press' },
+  { cat:'news',     type:'image', src:'/gallery/Book_Fair.jpg',         label:'Coverage – Uttar Ujala' },
+  { cat:'news',     type:'image', src:'/gallery/Book_Fair2.jpg',         label:'Coverage – Dainik Jagran' },
+  { cat:'news',     type:'image', src:'/gallery/Jadi-Buti.jpg ',         label:'Coverage – Amar Ujala' },
+  { cat:'news',     type:'image', src:'/gallery/Jadi-Buti2.jpg ',         label:'Coverage – Amar Ujala' },
+  { cat:'news',     type:'image', src:'/gallery/Wildlife_Conservation1.jpg ',         label:'Coverage – Amar Ujala' },
+  { cat:'news',     type:'image', src:'/gallery/Science1.jpg ',         label:'Coverage – Sahara' },
   
   // —— PRODUCT IMAGES ────────────────────────────────────
   { cat:'products', type:'image', src:'/gallery/mushroom2.jpeg', label:'Oyster Mushrooms'}
