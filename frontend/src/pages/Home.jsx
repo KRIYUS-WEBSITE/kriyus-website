@@ -71,54 +71,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-5 d-none d-lg-flex justify-content-center anim-up-d2">
-              <div style={{ position:'relative', width:360, height:360 }}>
-                <div style={{ width:360, height:360, borderRadius:'50%',
-                              border:'1px solid rgba(203, 108, 73, 0.2)',
-                              display:'flex', alignItems:'center', justifyContent:'center' }}>
-                  <div style={{ width:280, height:280, borderRadius:'50%',
-                                background:'rgba(202, 108, 74, 0.08)',
-                                display:'flex', alignItems:'center', justifyContent:'center',
-                                flexDirection:'column', textAlign:'center', gap:8 }}>
-                    <div style={{ width:64, height:64, borderRadius:16,
-                    background:'rgba(194,82,42,0.2)',
-                    display:'flex', alignItems:'center', justifyContent:'center' }}>
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--terra-light)" strokeWidth="1.5">
-                        <path d="M3 20l5-8 4 5 3-4 6 7H3z"/>
-                        <circle cx="17" cy="6" r="2" fill="var(--terra-light)" stroke="none"/>
-                      </svg>
-                    </div>
-                    <div style={{ color:'var(--parch)', fontFamily:'Playfair Display,serif',
-                                  fontWeight:700, fontSize:17, lineHeight:1.3 }}>
-                      Pithoragarh<br/>
-                      <span style={{ color:'var(--terra-light)', fontSize:13,
-                                     fontWeight:400, fontFamily:'Inter,sans-serif' }}>Uttarakhand</span>
-                    </div>
-                  </div>
-                </div>
-                {[
-                  { style:{ top:'-5%', left:'-10%' },  symbol:'♀', text:'20+ SHGs' },
-                  { style:{ top:'20%', right:'-15%' }, symbol:'◈', text:'5000+ Villages' },
-                  { style:{ bottom:'5%', left:'-8%' }, symbol:'◉', text:'UNDP Partner' }
-                ].map(({ style, symbol, text }) => (
-                  <div key={text} style={{ position:'absolute', ...style,
-                            background:'rgba(255,255,255,0.06)',
-                            border:'1px solid rgba(194,82,42,0.28)',
-                            borderRadius:12, padding:'10px 16px',
-                            display:'flex', alignItems:'center', gap:10,
-                            backdropFilter:'blur(8px)' }}>
-                    <div style={{ width:28, height:28, borderRadius:6,
-                              background:'var(--terra)', display:'flex',
-                              alignItems:'center', justifyContent:'center',
-                              color:'white', fontSize:14, fontWeight:700,
-                              flexShrink:0 }}>{symbol}</div>
-                    <span style={{ color:'var(--parch)', fontSize:12,
-                        fontFamily:'Inter,sans-serif', fontWeight:600,
-                        whiteSpace:'nowrap' }}>{text}</span>
-                </div>
-                ))}
-              </div>
-            </div>
+            <div className="col-lg-5 d-flex justify-content-center anim-up-d2">
+  <div style={{ width:'100%', maxWidth:420 }}>
+    <div style={{ borderRadius:20, overflow:'hidden',
+                  border:'3px solid rgba(194,82,42,0.3)',
+                  boxShadow:'0 24px 64px rgba(0,0,0,0.4)' }}>
+      <img src="/gallery/forest_fire1.jpeg" alt="KRIYUS field work"
+           style={{ width:'100%', height:'min(420px, 55vw)',
+                    objectFit:'cover', display:'block' }} />
+    </div>
+  </div>
+</div>
           </div>
         </div>
         <div className="scroll-indicator">
