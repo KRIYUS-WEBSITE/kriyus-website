@@ -56,6 +56,24 @@ export default function About() {
                   <div style={{ color:'rgba(245,240,232,0.75)', fontSize:13 }}>Our base — gateway to the Greater Himalayas</div>
                 </div>
               </div>
+              <div style={{ marginTop:16, display:'grid', 
+              gridTemplateColumns:'1fr 1fr', gap:10 }}>
+  {[
+    ['Registration No.', '178/2002-2003'],
+    ['PAN', 'AAAAK7143D'],
+    ['80G', 'Tax Exemption Registered'],
+    ['CSR No.', 'CSR00059700'],
+  ].map(([k, v]) => (
+    <div key={k} style={{ background:'var(--navy)', borderRadius:10,
+                          padding:'12px 16px' }}>
+      <div style={{ fontSize:10, fontWeight:700, letterSpacing:1,
+                    textTransform:'uppercase', 
+                    color:'var(--terra-light)', marginBottom:4 }}>{k}</div>
+      <div style={{ fontSize:12, color:'rgba(245,240,232,0.85)',
+                    fontWeight:600 }}>{v}</div>
+    </div>
+  ))}
+</div>
             </div>
           </div>
         </div>

@@ -65,7 +65,25 @@ export default function Footer() {
 <p style={{ fontSize:13 }}>murarikeys2002@gmail.com</p>
           </div>
         </div>
-
+        {/* Legal credentials strip */}
+<div style={{ borderTop:'1px solid rgba(255,255,255,0.08)', 
+              paddingTop:20, marginBottom:20 }}>
+  <div style={{ display:'flex', flexWrap:'wrap', gap:'12px 32px' }}>
+    {[
+      ['Reg. No.', '178/2002-2003'],
+      ['PAN', 'AAAAK7143D'],
+      ['80G', 'Tax Exemption Registered'],
+      ['CSR', 'CSR00059700'],
+    ].map(([k, v]) => (
+      <div key={k} style={{ fontSize:12 }}>
+        <span style={{ color:'rgba(255,255,255,0.4)', 
+                       marginRight:6 }}>{k}:</span>
+        <span style={{ color:'rgba(255,255,255,0.7)', 
+                       fontWeight:600 }}>{v}</span>
+      </div>
+    ))}
+  </div>
+</div>
         <div style={{ borderTop:'1px solid rgba(255,255,255,0.08)', paddingTop:24, textAlign:'center', fontSize:12 }}>
           © {new Date().getFullYear()} KRIYUS – Krida Evam Yuva Samiti. All rights reserved.
           &nbsp;·&nbsp; Pithoragarh, Uttarakhand

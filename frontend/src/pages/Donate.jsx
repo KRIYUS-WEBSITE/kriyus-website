@@ -58,8 +58,32 @@ export default function Donate() {
                   <div style={{ fontSize:12, color:'#1976D2' }}>All donations are documented and used exclusively for community programs. Annual reports available on request.</div>
                 </div>
               </div>
+              <div style={{ background:'white', border:'1px solid var(--border)',
+              borderRadius:12, padding:'16px 20px', marginTop:16 }}>
+  <div style={{ fontSize:11, fontFamily:'Inter,sans-serif', fontWeight:700,
+                letterSpacing:2, textTransform:'uppercase',
+                color:'var(--text-muted)', marginBottom:12 }}>
+    Legal & Tax Information
+  </div>
+  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+    {[
+      ['Registration No.', '178/2002-2003'],
+      ['PAN Card', 'AAAAK7143D'],
+      ['80G Status', 'Registered — Tax Exemption Available'],
+      ['CSR Registration', 'CSR00059700'],
+    ].map(([k, v]) => (
+      <div key={k} style={{ padding:'10px 14px', background:'var(--parch)',
+                            borderRadius:8, borderLeft:'3px solid var(--terra)' }}>
+        <div style={{ fontSize:10, fontWeight:700, letterSpacing:1,
+                      textTransform:'uppercase', color:'var(--text-muted)',
+                      marginBottom:4 }}>{k}</div>
+        <div style={{ fontSize:13, fontWeight:600, 
+                      color:'var(--text-dark)' }}>{v}</div>
+      </div>
+    ))}
+  </div>
+</div>
             </div>
-
             <div className="col-lg-7">
               <div style={{ background:'white', border:'1px solid var(--border)', borderRadius:16, padding:36 }}>
                 <h4 style={{ fontFamily:'Playfair Display,serif', fontWeight:700, color:'var(--navy)', marginBottom:24 }}>♥ Share Your Donation Details</h4>
