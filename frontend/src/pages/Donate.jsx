@@ -35,7 +35,7 @@ export default function Donate() {
               <p style={{ color:'var(--text-muted)', marginBottom:24 }}>All donations go directly to field programs. We maintain full financial transparency and provide receipts on request.</p>
 
               <div style={{ background:'white', border:'1px solid var(--border)', borderRadius:16, padding:28, marginBottom:16 }}>
-                <h5 style={{ fontFamily:'Inter,sans-serif', fontWeight:700, color:'var(--navy)', marginBottom:20 }}>🏦 Bank Account Details</h5>
+                <h5 style={{ fontFamily:'Inter,sans-serif', fontWeight:700, color:'var(--navy)', marginBottom:20 }}> Bank Account Details</h5>
                 {[['Account Name','Krida Evam Yuva Samiti'],['Bank','State Bank of India'],
                   ['Branch','Nakote, Pithoragarh'],['Account No.','11801727127'],['IFSC Code','SBIN0008426']].map(([k,v]) => (
                   <div key={k} className="bank-row">
@@ -43,20 +43,6 @@ export default function Donate() {
                     <span style={{ fontWeight:600 }}>{v}</span>
                   </div>
                 ))}
-              </div>
-
-              <div style={{ background:'var(--parch)', border:'1px dashed var(--terra)', borderRadius:12, padding:20, textAlign:'center', marginBottom:16 }}>
-                <div style={{ fontSize:12, fontWeight:700, letterSpacing:'1px', textTransform:'uppercase', color:'var(--terra)', marginBottom:6 }}>📱 UPI Payment</div>
-                <div style={{ fontWeight:600, color:'var(--navy)' }}>UPI ID available on request</div>
-                <div style={{ fontSize:13, color:'var(--text-muted)', marginTop:4 }}>Contact: murarikeys2002@gmail.com / kriyusngo@gmail.com</div>
-              </div>
-
-              <div style={{ background:'#EEF6FF', border:'1px solid #B3D4F5', borderRadius:12, padding:16, display:'flex', gap:12 }}>
-                <span style={{ fontSize:20 }}>🔍</span>
-                <div>
-                  <div style={{ fontWeight:600, fontSize:13, color:'#1565C0', marginBottom:4 }}>100% Transparency Pledge</div>
-                  <div style={{ fontSize:12, color:'#1976D2' }}>All donations are documented and used exclusively for community programs. Annual reports available on request.</div>
-                </div>
               </div>
               <div style={{ background:'white', border:'1px solid var(--border)',
               borderRadius:12, padding:'16px 20px', marginTop:16 }}>
@@ -83,6 +69,20 @@ export default function Donate() {
     ))}
   </div>
 </div>
+              <div style={{ background:'var(--parch)', border:'1px dashed var(--terra)', borderRadius:12, padding:20, textAlign:'center', marginBottom:16 }}>
+                <div style={{ fontSize:12, fontWeight:700, letterSpacing:'1px', textTransform:'uppercase', color:'var(--terra)', marginBottom:6 }}>📱 UPI Payment</div>
+                <div style={{ fontWeight:600, color:'var(--navy)' }}>UPI ID available on request</div>
+                <div style={{ fontSize:13, color:'var(--text-muted)', marginTop:4 }}>Contact: murarikeys2002@gmail.com / kriyusngo@gmail.com</div>
+              </div>
+
+              <div style={{ background:'#EEF6FF', border:'1px solid #B3D4F5', borderRadius:12, padding:16, display:'flex', gap:12 }}>
+                <span style={{ fontSize:20 }}>🔍</span>
+                <div>
+                  <div style={{ fontWeight:600, fontSize:13, color:'#1565C0', marginBottom:4 }}>100% Transparency Pledge</div>
+                  <div style={{ fontSize:12, color:'#1976D2' }}>All donations are documented and used exclusively for community programs. Annual reports available on request.</div>
+                </div>
+              </div>
+              
             </div>
             <div className="col-lg-7">
               <div style={{ background:'white', border:'1px solid var(--border)', borderRadius:16, padding:36 }}>
