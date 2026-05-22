@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import HeroSection from '../components/HeroSection'
+import ImportedProjectCard from '../components/ProjectCard'
 
 const projects = [
   {
     id: 'mushroom',
+    image: '/gallery/mushroom_training1.jpeg',
     emoji: '🍄',
     gradient: 'grad-sage',
     tag: 'Livelihoods · NHPC',
@@ -31,6 +33,7 @@ const projects = [
   },
   {
     id: 'shg',
+    image: '/gallery/mushroom_training2.jpeg',
     emoji: '👩‍👩‍👧',
     gradient: 'grad-terra',
     tag: 'Women Empowerment · NABARD',
@@ -58,6 +61,7 @@ const projects = [
   },
   {
     id: 'jaljeevan',
+    image: '/gallery/jal_jeevan_mission.jpeg',
     emoji: '💧',
     gradient: 'grad-navy',
     tag: 'Water · Govt. of Uttarakhand',
@@ -85,6 +89,7 @@ const projects = [
   },
   {
     id: 'biodiversity',
+    image: '/gallery/water_conservation1.jpeg',
     emoji: '🦅',
     gradient: 'grad-teal',
     tag: 'Biodiversity · Biodiversity Board',
@@ -112,6 +117,7 @@ const projects = [
   },
   {
     id: 'securehimalaya',
+    image: '/gallery/pmksy1.jpeg',
     emoji: '🏔️',
     gradient: 'grad-rose',
     tag: 'Conservation · UNDP',
@@ -132,13 +138,14 @@ const projects = [
       { value: 'UNDP', label: 'International Partner' },
     ],
     images: [
-      { src: '/gallery/pmksy1.jpg', label: 'High Altitude Field Survey' },
+      { src: '/gallery/pmksy1.jpeg', label: 'High Altitude Field Survey' },
       { src: '/gallery/forest_fire1.jpeg', label: 'Community Conservation Meeting' },
       { src: '/gallery/pmksy3.jpeg', label: 'Snow Leopard Habitat Zone' },
     ],
   },
   {
     id: 'vanpanchayat',
+    image: '/gallery/van_panchayat1.jpeg',
     emoji: '🌲',
     gradient: 'grad-navy',
     tag: 'Forest Governance',
@@ -166,6 +173,7 @@ const projects = [
   },
   {
     id: 'led',
+    image: '/gallery/training1.jpeg',
     emoji: '💡',
     gradient: 'grad-gold',
     tag: 'Skill Development',
@@ -193,6 +201,7 @@ const projects = [
   },
   {
     id: 'foodprocessing',
+    image: '/gallery/training3.jpeg',
     emoji: '🍪',
     gradient: 'grad-sage',
     tag: 'Skill Development',
@@ -220,6 +229,7 @@ const projects = [
   },
   {
     id: 'forestfire',
+    image: '/gallery/forest_fire1.jpeg',
     emoji: '🔥',
     gradient: 'grad-gold',
     tag: 'Environmental Awareness',
@@ -247,6 +257,7 @@ const projects = [
   },
   {
     id: 'climate',
+    image: '/gallery/watershed1.jpeg',
     emoji: '🌍',
     gradient: 'grad-navy',
     tag: 'Youth · Climate Action',
@@ -274,6 +285,7 @@ const projects = [
   },
   {
     id: 'bookfair',
+    image: '/gallery/nbt1.jpeg',
     emoji: '📖',
     gradient: 'grad-rose',
     tag: 'Education · NBT',
@@ -321,27 +333,6 @@ function ProjectImage({ src, label }) {
   )
 }
 
-// ── Small project card ───────────────────────────────────────
-function ProjectCard({ project, onClick }) {
-  return (
-    <div onClick={onClick} style={{ cursor: 'pointer' }}
-         className="k-card h-100">
-      <div className={`k-card-img ${project.gradient}`}>
-        <span>{project.emoji}</span>
-      </div>
-      <div className="k-card-body">
-        <div className="k-card-tag">{project.tag}</div>
-        <h3>{project.title}</h3>
-        <p>{project.shortDesc}</p>
-        <div className="k-impact-badge">{project.impact}</div>
-        <div style={{ marginTop: 16, color: 'var(--terra)', fontSize: 13,
-                      fontWeight: 600, display: 'flex', alignItems: 'center', gap: 6 }}>
-          View Details <span style={{ fontSize: 16 }}>→</span>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 // ── Full project detail section ──────────────────────────────
 function ProjectDetail({ project }) {
@@ -485,7 +476,15 @@ export default function Projects() {
           <div className="row g-4">
             {projects.map(p => (
               <div className="col-md-6 col-lg-4" key={p.id}>
-                <ProjectCard project={p} onClick={() => scrollToDetail(p.id)} />
+                <ImportedProjectCard
+                  image={p.image}
+                  accentColor="terra"
+                  tag={p.tag}
+                  title={p.title}
+                  description={p.shortDesc}
+                  impact={p.impact}
+                  onClick={() => scrollToDetail(p.id)}
+                />
               </div>
             ))}
           </div>
